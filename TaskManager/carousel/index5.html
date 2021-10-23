@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+      var owl = $('.owl-carousel');
+   owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+   });
+    </script>
+ 
+</head>
+<body>
+
+<div class="owl-carousel owl-theme">
+  <div><img src="resim/11.jpg"></div>
+  <div><img src="resim/22.jpg"></div>
+  <div><img src="resim/33.jpg"></div>
+  <div><img src="resim/44.jpg"></div>
+  <div><img src="resim/55.jpg"></div>
+  <div><img src="resim/66.jpg"></div>
+  <div><img src="resim/11.jpg"></div>
+</div>
+<br>
+<br>
+<br>
+<div style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- margue -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:250px"
+     data-ad-client="ca-pub-5794643547525653"
+     data-ad-slot="9897526779"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+</div>	
+</body>
+</html>
